@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Engineering project portfolio for Luke Chipman" />
+  <title>Luke Chipman | Engineering Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">LC</div>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" id="themeToggle">
+      <span>🌙</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="hero__content">
+        <p class="eyebrow">Engineering Leader · Systems Thinker · Builder</p>
+        <h1>Luke Chipman</h1>
+        <p class="lead">
+          Engineering leader specializing in industrial automation, embedded systems,
+          and end-to-end product delivery. I design resilient architectures and coach
+          teams to ship robust solutions—from proof-of-concept to production at scale.
+        </p>
+        <div class="hero__cta">
+          <a class="button" href="#projects">View Projects</a>
+          <a class="button ghost" href="#contact">Get in Touch</a>
+        </div>
+        <div class="hero__meta">
+          <div>
+            <p class="meta__label">Location</p>
+            <p>Halifax, Nova Scotia</p>
+          </div>
+          <div>
+            <p class="meta__label">Focus Areas</p>
+            <p>Automation · Embedded · IoT · Data-Driven Ops</p>
+          </div>
+          <div>
+            <p class="meta__label">Availability</p>
+            <p>Open for consulting and collaborations</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero__card">
+        <div class="badge">15+ yrs delivering engineered systems</div>
+        <p class="card__text">
+          I bring together mechanical, electrical, and software disciplines to build
+          products that are maintainable, observable, and aligned with business goals.
+        </p>
+        <ul class="card__highlights">
+          <li>Hands-on with PLCs, microcontrollers, and edge compute</li>
+          <li>Track record of leading cross-functional delivery teams</li>
+          <li>Root-cause and reliability expert; metrics over guesswork</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section__header">
+        <p class="eyebrow">Capabilities</p>
+        <h2>Technical Skills</h2>
+        <p class="lead">Blend of architecture, hands-on engineering, and operational rigor.</p>
+      </div>
+      <div class="skills">
+        <article class="pill">
+          <h3>Systems Engineering</h3>
+          <p>Specification, hazard analysis, FMEA, compliance, and traceability for regulated deployments.</p>
+        </article>
+        <article class="pill">
+          <h3>Automation & Controls</h3>
+          <p>PLC programming, industrial networking, SCADA/HMI design, and commissioning support.</p>
+        </article>
+        <article class="pill">
+          <h3>Embedded & Edge</h3>
+          <p>ARM/AVR firmware, RTOS integration, sensor fusion, power optimization, and secure OTA updates.</p>
+        </article>
+        <article class="pill">
+          <h3>Cloud & Data</h3>
+          <p>Azure/AWS IoT, data pipelines, observability dashboards, and feedback loops for continuous improvement.</p>
+        </article>
+        <article class="pill">
+          <h3>Leadership</h3>
+          <p>Roadmapping, stakeholder alignment, agile delivery, hiring, mentoring, and vendor management.</p>
+        </article>
+        <article class="pill">
+          <h3>Tooling</h3>
+          <p>Python, C/C++, TypeScript, Node.js, Docker, GitHub Actions, and rapid prototyping with CAD/PCB tools.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section__header">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects</h2>
+        <p class="lead">High-impact engagements that combine hardware, firmware, and software.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-card__header">
+            <p class="project__tag">Industrial Automation</p>
+            <span class="project__date">2023</span>
+          </div>
+          <h3>Automated Material Handling Line</h3>
+          <p>
+            Led design and commissioning for a multi-station handling system with
+            coordinated motion, safety PLCs, and predictive maintenance telemetry.
+          </p>
+          <ul>
+            <li>Architected control strategy and PLC codebase with reusable function blocks.</li>
+            <li>Introduced historian dashboards for MTBF/MTTR visibility and RCA.</li>
+            <li>Delivered to production in 10 weeks with zero unplanned downtime during ramp.</li>
+          </ul>
+          <div class="project-card__footer">
+            <span>Technologies: Siemens TIA, Profinet, Ignition, Python</span>
+            <a href="#contact" class="text-link">Discuss this build →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <p class="project__tag">Embedded / IoT</p>
+            <span class="project__date">2022</span>
+          </div>
+          <h3>Condition Monitoring Sensor Platform</h3>
+          <p>
+            Built a low-power, multi-sensor node with secure OTA updates and edge
+            analytics for anomaly detection in rotating equipment.
+          </p>
+          <ul>
+            <li>Implemented sensor fusion and frequency analysis on an ARM Cortex-M4.</li>
+            <li>Designed hardware for EMI resilience and modular radio options.</li>
+            <li>Integrated cloud ingestion with automated QA gates and device twins.</li>
+          </ul>
+          <div class="project-card__footer">
+            <span>Technologies: Zephyr RTOS, C, LoRaWAN, Azure IoT, Grafana</span>
+            <a href="#contact" class="text-link">View architecture notes →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <p class="project__tag">Data & Observability</p>
+            <span class="project__date">2021</span>
+          </div>
+          <h3>Operational Analytics for Field Equipment</h3>
+          <p>
+            Deployed a metrics pipeline and alerting stack for a fleet of remote assets,
+            enabling proactive service and SLA-driven performance.
+          </p>
+          <ul>
+            <li>Unified telemetry schema across firmware, gateway, and cloud components.</li>
+            <li>Built SLO dashboards, anomaly alerts, and runbooks for field technicians.</li>
+            <li>Reduced downtime by 32% through targeted firmware updates and retraining.</li>
+          </ul>
+          <div class="project-card__footer">
+            <span>Technologies: MQTT, TimescaleDB, InfluxDB, Kubernetes, Terraform</span>
+            <a href="#contact" class="text-link">See data story →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <p class="project__tag">Leadership</p>
+            <span class="project__date">Ongoing</span>
+          </div>
+          <h3>Engineering Playbook & Mentorship</h3>
+          <p>
+            Authored an engineering playbook covering delivery practices, documentation
+            standards, and incident response to align distributed teams.
+          </p>
+          <ul>
+            <li>Established design review rituals and architecture decision records.</li>
+            <li>Coached interdisciplinary squads on iterative delivery and observability.</li>
+            <li>Improved onboarding time by 40% with curated guides and templates.</li>
+          </ul>
+          <div class="project-card__footer">
+            <span>Technologies: GitHub Actions, ADR tooling, Notion, Miro</span>
+            <a href="#contact" class="text-link">Request a workshop →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section__header">
+        <p class="eyebrow">Career</p>
+        <h2>Experience</h2>
+        <p class="lead">Hands-on leadership across R&D, manufacturing, and operations.</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline__item">
+          <div class="timeline__date">2020 — Present</div>
+          <div>
+            <h3>Principal Engineer & Delivery Lead</h3>
+            <p>Partner with clients to design resilient architectures and guide teams through delivery and commissioning.</p>
+            <ul>
+              <li>Scaled automation deployments across multiple sites with standardized templates.</li>
+              <li>Instituted reliability metrics and incident review loops.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline__item">
+          <div class="timeline__date">2016 — 2020</div>
+          <div>
+            <h3>Senior Systems Engineer</h3>
+            <p>Delivered embedded/IoT solutions from prototype to production, owning firmware, hardware, and cloud integration.</p>
+            <ul>
+              <li>Launched a connected product line with remote diagnostics and OTA pipeline.</li>
+              <li>Built lab automation rigs for hardware validation and regression.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="timeline__item">
+          <div class="timeline__date">2010 — 2016</div>
+          <div>
+            <h3>Controls Engineer</h3>
+            <p>Developed PLC/HMI applications, safety systems, and commissioning support for manufacturing lines.</p>
+            <ul>
+              <li>Certified safety routines and coordinated vendor FAT/SAT.</li>
+              <li>Optimized cycle times and improved maintainability with modular code.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--accent" id="contact">
+      <div class="contact">
+        <div>
+          <p class="eyebrow">Collaboration</p>
+          <h2>Let’s build the next system together</h2>
+          <p class="lead">
+            Whether you need a fast prototype, a reliability review, or a roadmap for
+            scaling production, I can help define the plan and lead the delivery.
+          </p>
+        </div>
+        <form class="contact__form" action="https://formspree.io/f/mldraqko" method="POST">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          <label for="message">Project details</label>
+          <textarea id="message" name="message" rows="4" placeholder="What challenge are you tackling?" required></textarea>
+          <button type="submit" class="button">Send message</button>
+          <p class="form__note">Powered by Formspree — responses go directly to email.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <p class="logo">LC</p>
+      <p class="muted">Built with an engineering mindset — reliable, maintainable, and observable.</p>
+    </div>
+    <div class="footer__links">
+      <a href="mailto:luke.chipman@example.com">Email</a>
+      <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="#">Download CV</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
