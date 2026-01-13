@@ -107,9 +107,9 @@ h3 {
 
 .meta__label {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
-  margin: 0 0 4px;
+  margin: 0 0 2px;
 }
 
 .section {
